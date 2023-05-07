@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="icon" type="html" href="image/s.png">	
+ <meta  charset="UTF-8">
+<meta name="keywords" content="HTML, JavaScript, Menu, Search">
+ <meta name="description" content="Էլեկտրոնային գրքեր կարեղ եք ներբեռնել մեր կայքից">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ԲՏԳ</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+    /* Content */
+.content {
+  background-color: white;
+  padding: 5px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+}
+</style>
+      
+ <style> 
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #009688;
+  padding: 23px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #00b3a1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 40px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #009688;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 00px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+     }
+     
+ h1, h5, h2 {
+        text-align: center;
+        
+    }
+     
+</style>
+      
+      <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+  background-color: #eee;
+}
+</style>
+      
+      <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadee {
+  -webkit-animation-name: fadee;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadee;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadee {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fadee {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+     <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 4px 6px 4px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #009688;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #009688;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 110px;
+}
+
+</style>
+    
+      </head>
+   
+          <body > 
+    <header>
+        
+
+        <h2><b>  Բազմափուլ տեխնոլոգիական գործընթաց</b> </h2>
+       
+  </header>
+    
+                                
+<section>
+  <nav>
+    <ul>
+       <div class="row">
+  <div class="left" style="background-color: #00b3a1;">
+      <center> <h3>Մենյու</h3> </center>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Որոնել..." > 
+    <ul id="myMenu">
+      <li><a href="Btg%20tesak.html" target="_blank"> ԲՏԳ-ի տեսակներ</a></li>
+       <li><a href="qtg%20tesak.html" target="_blank"> ՔՏԳ-ի տեսակներ</a></li> 
+     
+        <div class="sidenav">
+    <div class="dropdown-btn">Մոդելների տեսակները 
+    <i class="fa fa-caret-down"></i>
+  </div>
+  <div class="dropdown-container">
+    <a href="Model.html" target="_blank">ԲՏԳ-ների մոդելների տեսակները</a>
+    <a href="poxast.html" target="_blank">ՔՏԳ-ի փոխակերպման աստիճանի որոշման մաթ. մոդել</a>
+    <a href="tevoxut.html" target="_blank">ՔՏԳ-ի ընդհանուր տևողության նվազեցման մաթ. մոդել</a>
+  </div>
+ </div>
+        <li><a href="op.html" target="_blank">Օպտիմալացման մեթոդներ</a> </li>
+        <li><a href="opxnd.html" target="_blank">Օպտիմալացման խնդիրներ</a></li>
+        
+        <div class="sidenav">
+    <div class="dropdown-btn">Ծրագրային ապահովում 
+    <i class="fa fa-caret-down"></i>
+  </div>
+  <div class="dropdown-container">
+    <a href="algoritmsxema.html" target="_blank">Օպտիմալացման ալգորիթմի ընդհանրացված բլոկ-սխեմա</a>
+    <a href="hamakarg.html" target="_blank"> Ծրագրային համակարգի կառուցվածքը</a>
+    
+  </div>
+ </div>
+        
+    <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+        
+       
+                 
+      
+        
+        <li><a href="kombinat.html" target="_blank">Կոմբինատներ</a></li>
+    
+    </ul>
+  </div>
+  
+  
+<script> 
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+    </div>
+      </ul>
+  </nav>
+  
+  <article>
+         <div class="main">
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/%D6%84%D5%A1%D5%BB.jpg" style="width:110%" height="200">
+      <h3>Քաջարան</h3>
+      <p>Քաջարանի պղինձ-մոլիբդենային հանքավայր, հանքավայր ՀՀ Սյունիքի մարզում՝ Ողջի գետի վերին ավազանում.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+    <img src="image/kashen.jpg" style="width:110%" height="200">
+      <h3>Կաշեն</h3>
+      <p>Կաշենի պղինձ-մոլիբդենային հանքավայր, հանքավայր Արցախում՝ Մարտակերտի շրջանում.</p>
+    </div>
+    </div>
+    <div class="column">
+    <div class="content">
+    <img src="image/tMine.jpg" style="width:130", height="200">
+      <h3>Թեղուտ</h3>
+      <p>Թեղուտի պղինձ-մոլիբդենային հանքավայր, հանքավայր Հայաստանի Լոռու մարզում՝ Թեղուտ գյուղի շրջակայքում.</p>
+    </div>
+  </div>
+  </div>
+      </div>
+ </article>
+</section>
+
+<footer>
+
+        <div class="menu">
+            
+    <button>  <a href="tezzz.html" > Գլխավոր   </a> </button>
+    <button> <a href="mer masin.html"target="_blank">  Հետադարձ կապ </a></button>
+  
+            
+   </div>
+      <br>
+<div>
+    <p>© 2021 - 2023 ուս.տարում կատարված մագիստրոսական աշխատանք: <img src="image/mm.png" width="20" >     </p> 
+    <img src="image/gmail.png" width="50"> milena1999a@mail.ru
+    <img src="image/ph.png" width="50"> 077******
+    <img src="image/512.png" width="50"> ՀՀ, ք. Կապան
+    
+    </div>
+ </footer>
+    
+</body>
+</html>
